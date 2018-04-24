@@ -37,7 +37,6 @@
                         Missle Alert - PACOM (CDW)
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Bit of explanation here...</p>
                         <div class="text-center">
                             <button type="button" id="btn-test" class="btn btn-secondary" data-toggle="modal" data-target="#test-confimation-modal">Test Alarm System</button>
                             <button type="button" id="button-alarm" class="btn btn-danger" data-toggle="modal" data-target="#confimation-modal-1">Activate Alarm System</button>
@@ -51,7 +50,6 @@
                         AMBER Alert
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Bit of explanation here...</p>
                         <div class="text-center">
                             <button type="button" id="btn-test" class="btn btn-secondary" data-toggle="modal" data-target="#test-confimation-modal">Test Alarm System</button>
                             <button type="button" id="button-alarm" class="btn btn-danger" data-toggle="modal" data-target="#confimation-modal-1">Activate Alarm System</button>
@@ -65,7 +63,6 @@
                         Tsunami Alert (CEM)
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Bit of explanation here...</p>
                         <div class="text-center">
                             <button type="button" id="btn-test" class="btn btn-secondary" data-toggle="modal" data-target="#test-confimation-modal">Test Alarm System</button>
                             <button type="button" id="button-alarm" class="btn btn-danger" data-toggle="modal" data-target="#confimation-modal-1">Activate Alarm System</button>
@@ -77,19 +74,16 @@
         </div>
     </div>
 
-
     <!-- Test Confirmation Modal -->
-    <div class="modal fade" id="test-confimation-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="test-confimation-modal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Enable Test Alarm?</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel">Test Alarm</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Are you sure you want to enable the Test Alarm?</p>
+                    <p>Are you sure you want to enable the TEST Alarm?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -100,17 +94,15 @@
     </div>
 
     <!-- Confimation Modal 1 -->
-    <div class="modal fade" id="confimation-modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="confimation-modal-1" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Enable Alarm?</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel">Enable Alarm</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Are you sure you want to enable the alarm?</p>
+                    <p>Are you sure you want to enable the state-wide alarm?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -121,63 +113,56 @@
     </div>
 
     <!-- Confimation Modal 2 -->
-    <div class="modal fade" id="confimation-modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="confimation-modal-2" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Enable Alarm?</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel">Enable Alarm</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Are you REALLY sure you want to enable the alarm? This will activate all of Hawaii's alarms.</p>
+                    <p>Are you REALLY sure you want to enable the alarm?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confimation-modal-3" data-dismiss="modal" onclick="startSound()">Yes</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confimation-modal-3" data-dismiss="modal">Yes</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Confimation Modal 3 -->
-    <div class="modal fade" id="confimation-modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="confimation-modal-3" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Enable Alarm?</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel">Enable Alarm</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Clicking Activate will activate all of Hawaii's alarms.</p>
+                    <p>Clicking Activate will activate the REAL alarm.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="stopSound()">Cancel</button>
-                    <button type="button" class="btn btn-primary">Activate</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="startSound()" data-toggle="modal" data-target="#sound-modal" data-dismiss="modal">Activate</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Nuke Confirmation Modal -->
-    <div class="modal fade" id="nuke-confimation-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Playing Sound Modal -->
+    <div class="modal fade" id="sound-modal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Nuke launched</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body">
                     <p>A very big nuke has been launched with target: Pyongyang</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">OH SHIT</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">OH SHIT</button>
+                    <button type="button" class="btn btn-primary btn-block" data-dismiss="modal" onclick="stopSound()" style="width: 100%">Deactivate</button>
                 </div>
             </div>
         </div>
@@ -190,32 +175,35 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-	<script>
-	var alarmSound = new sound("./Alarm.mp3");
-function startSound(){
-alarmSound.play();
-}
-function sound(src){
-	this.sound = document.createElement("audio");
-	this.sound.src = src;
-	this.sound.setAttribute("preload","auto");
-	this.sound.setAttribute("controls","none");
-	this.sound.style.display = "none";
-	document.body.appendChild(this.sound);
-	this.play = function(){
-	console.log('sound started with '+sound.src)
-		this.sound.play();
-	}
-	this.stop = function(){
-	console.log('sound stopped')
-		this.sound.pause();
-		this.sound.currentTime=0
-	}
-}
-function stopSound(){
-	alarmSound.stop();
-}
-	</script>
+    <script>
+        var alarmSound = new sound('./Alarm.mp3');
+
+        function startSound() {
+            alarmSound.play();
+        }
+
+        function sound(src) {
+            this.sound = document.createElement('audio');
+            this.sound.src = src;
+            this.sound.setAttribute('preload', 'auto');
+            this.sound.setAttribute('controls', 'none');
+            this.sound.style.display = 'none';
+            document.body.appendChild(this.sound);
+            this.play = function () {
+                console.log('sound started with ' + sound.src)
+                this.sound.play();
+            }
+            this.stop = function () {
+                console.log('sound stopped')
+                this.sound.pause();
+                this.sound.currentTime = 0
+            }
+        }
+
+        function stopSound() {
+            alarmSound.stop();
+        }
+    </script>
 </body>
 
 </html>
