@@ -135,7 +135,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confimation-modal-3" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confimation-modal-3" data-dismiss="modal" onclick="startSound()">Yes</button>
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@
                     <p>Clicking Activate will activate all of Hawaii's alarms.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="stopSound()">Cancel</button>
                     <button type="button" class="btn btn-primary">Activate</button>
                 </div>
             </div>
@@ -190,7 +190,32 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-
+	<script>
+	var alarmSound = new sound("./Alarm.mp3");
+function startSound(){
+alarmSound.play();
+}
+function sound(src){
+	this.sound = document.createElement("audio");
+	this.sound.src = src;
+	this.sound.setAttribute("preload","auto");
+	this.sound.setAttribute("controls","none");
+	this.sound.style.display = "none";
+	document.body.appendChild(this.sound);
+	this.play = function(){
+	console.log('sound started with '+sound.src)
+		this.sound.play();
+	}
+	this.stop = function(){
+	console.log('sound stopped')
+		this.sound.pause();
+		this.sound.currentTime=0
+	}
+}
+function stopSound(){
+	alarmSound.stop();
+}
+	</script>
 </body>
 
 </html>
