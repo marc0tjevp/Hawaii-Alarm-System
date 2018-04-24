@@ -155,10 +155,16 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Nuke launched</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Alarm active</h5>
                 </div>
                 <div class="modal-body">
-                    <p>A very big nuke has been launched with target: Pyongyang</p>
+                    <p>The alarm is active untill you deactivate it manually</p>
+                        <i class="far fa-check-circle text-success"></i> Mobile Alert - Sent <br>
+                        <i class="far fa-check-circle text-success"></i> Television/Radio Alert - Sent <br>
+                        <i class="far fa-check-circle text-success"></i> Alarm Tower 1 - Online <br>
+                        <i class="fas fa-exclamation-circle text-danger"></i> Alarm Tower 2 - Offline <br>
+                        <i class="far fa-check-circle text-success"></i> Alarm Tower 3 - Online <br>
+                        <i class="far fa-check-circle text-success"></i> Alarm Tower 4 - Online <br>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary btn-block" data-dismiss="modal" onclick="stopSound()" style="width: 100%">Deactivate</button>
@@ -171,7 +177,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/alarm.js"></script>
-    
+
 </body>
 
 </html>
