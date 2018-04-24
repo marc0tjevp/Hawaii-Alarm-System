@@ -16,8 +16,8 @@
 
 <body>
 
-    <div class="container d-flex h-100">
-        <div class="row align-self-center w-100">
+    <div class="container">
+        <div class="row">
             <div class="col">
 
                 <div class="card text-white bg-dark">
@@ -64,7 +64,7 @@
                     <div class="card-body">
                         <div class="text-center">
                             <button type="button" id="btn-test" class="btn btn-secondary" data-toggle="modal" data-target="#test-confimation-modal">Test Alarm System</button>
-                            <button type="button" id="button-alarm" class="btn btn-danger" >Activate Alarm System</button>
+                            <button type="button" id="button-alarm" class="btn btn-danger">Activate Alarm System</button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,8 @@
                     <h5 class="modal-title" id="exampleModalLabel">Enable Missle Alert</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Are you <b>REALLY</b> sure you want to enable the alarm?</p>
+                    <p>Are you
+                        <b>REALLY</b> sure you want to enable the alarm?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -139,7 +140,8 @@
                     <h5 class="modal-title" id="exampleModalLabel">Enable Missle Alert</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Proceeding will activate the <b>REAL</b> alarm.</p>
+                    <p>Proceeding will activate the
+                        <b>REAL</b> alarm.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -159,12 +161,18 @@
                 </div>
                 <div class="modal-body">
                     <p>The alarm will stay active untill you deactivate it manually.</p>
-                        <i class="far fa-check-circle text-success"></i> Mobile Alert - Sent <br>
-                        <i class="far fa-check-circle text-success"></i> Television/Radio Alert - Sent <br>
-                        <i class="far fa-check-circle text-success"></i> Alarm Tower 1 - Online <br>
-                        <i class="fas fa-exclamation-circle text-danger"></i> Alarm Tower 2 - Offline <br>
-                        <i class="far fa-check-circle text-success"></i> Alarm Tower 3 - Online <br>
-                        <i class="far fa-check-circle text-success"></i> Alarm Tower 4 - Online <br>
+                    <i class="far fa-check-circle text-success"></i> Mobile Alert - Sent
+                    <br>
+                    <i class="far fa-check-circle text-success"></i> Television/Radio Alert - Sent
+                    <br>
+                    <i class="far fa-check-circle text-success"></i> Alarm Tower 1 - Online
+                    <br>
+                    <i class="fas fa-exclamation-circle text-danger"></i> Alarm Tower 2 - Offline
+                    <br>
+                    <i class="far fa-check-circle text-success"></i> Alarm Tower 3 - Online
+                    <br>
+                    <i class="far fa-check-circle text-success"></i> Alarm Tower 4 - Online
+                    <br>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary btn-block" data-dismiss="modal" onclick="stopSound()" style="width: 100%">Deactivate</button>
