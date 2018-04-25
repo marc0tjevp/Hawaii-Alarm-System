@@ -38,9 +38,13 @@
                 </div>
 
                 <div class="card text-white bg-dark">
-                    <div class="card-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        Missile Alert - PACOM (CDW)
+                    <div class="card-header d-flex">
+                        <p class="text-white">
+                            <i class="fas fa-exclamation-triangle"></i> Missile Alert - PACOM (CDW)
+                        </p>
+                        <p class="text-white ml-auto">
+                            STATE ONLY
+                        </p>
                     </div>
                     <div class="card-body">
                         <div class="text-center">
@@ -51,9 +55,13 @@
                 </div>
 
                 <div class="card text-white bg-dark">
-                    <div class="card-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        AMBER Alert
+                    <div class="card-header d-flex">
+                        <p class="text-white">
+                            <i class="fas fa-exclamation-triangle"></i> AMBER Alert
+                        </p>
+                        <p class="text-white ml-auto">
+                            STATE WIDE
+                        </p>
                     </div>
                     <div class="card-body">
                         <div class="text-center">
@@ -64,9 +72,13 @@
                 </div>
 
                 <div class="card text-white bg-dark">
-                    <div class="card-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        Tsunami Alert (CEM)
+                    <div class="card-header d-flex">
+                        <p class="text-white">
+                            <i class="fas fa-exclamation-triangle"></i> AMBER Alert
+                        </p>
+                        <p class="text-white ml-auto">
+                            KAUAI COUNTY
+                        </p>
                     </div>
                     <div class="card-body">
                         <div class="text-center">
@@ -77,9 +89,13 @@
                 </div>
 
                 <div class="card text-white bg-dark">
-                    <div class="card-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        High Surf Warning
+                    <div class="card-header d-flex">
+                        <p class="text-white">
+                            <i class="fas fa-exclamation-triangle"></i> Tsunami Alert (CEM)
+                        </p>
+                        <p class="text-white ml-auto">
+                            STATE ONLY
+                        </p>
                     </div>
                     <div class="card-body">
                         <div class="text-center">
@@ -90,9 +106,30 @@
                 </div>
 
                 <div class="card text-white bg-dark">
-                    <div class="card-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        Landslide
+                    <div class="card-header d-flex">
+                        <p class="text-white">
+                            <i class="fas fa-exclamation-triangle"></i> High Surf Warning
+                        </p>
+                        <p class="text-white ml-auto">
+                            NORTH SHORES
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <button type="button" id="btn-test" class="btn btn-secondary" data-toggle="modal" data-target="#test-confimation-modal">Test Alarm System</button>
+                            <button type="button" id="button-alarm" class="btn btn-danger">Activate Alarm System</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark">
+                    <div class="card-header d-flex">
+                        <p class="text-white">
+                            <i class="fas fa-exclamation-triangle"></i> Landslide
+                        </p>
+                        <p class="text-white ml-auto">
+                            HANA ROAD CLOSURE
+                        </p>
                     </div>
                     <div class="card-body">
                         <div class="text-center">
@@ -166,9 +203,11 @@
                 </div>
                 <div class="modal-body">
                     <p>Please review the message before sending it. Are you sure want to enable the missile alert and send this
-                        message?</p>
+                        message?
+                    </p>
                     <div class="alert alert-info" role="alert">
-                        <b>EMERGENCY ALERT:</b> <div class="results"></div>
+                        <b>EMERGENCY ALERT:</b>
+                        <div class="results"></div>
                     </div>
                 </div>
                 <div class="modal-footer">
