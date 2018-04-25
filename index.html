@@ -19,7 +19,7 @@
     <script>
         function getTextFromArea() {
             var public = document.getElementById('publicAlert').value;
-            console.log(public);
+            document.querySelector('.results').innerHTML = public;
         }
     </script>
 
@@ -40,7 +40,7 @@
                 <div class="card text-white bg-dark">
                     <div class="card-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        Missle Alert - PACOM (CDW)
+                        Missile Alert - PACOM (CDW)
                     </div>
                     <div class="card-body">
                         <div class="text-center">
@@ -135,8 +135,10 @@
                     <h5 class="modal-title" id="exampleModalLabel">Create a missile alert</h5>
                 </div>
                 <div class="modal-body">
-                    <p>You are creating a <b>REAL</b> alert. Please provide a warning message.</p>
-
+                    <div class="alert alert-danger" role="alert">
+                        You are creating a
+                        <b>REAL</b> alert. Please provide a warning message.
+                    </div>
                     <form>
                         <div class="form-group">
                             <label for="publicAlert">Public Warning Message</label>
@@ -147,7 +149,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confimation-modal-2" onclick="getTextFromArea()" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confimation-modal-2" onclick="getTextFromArea()"
+                        data-dismiss="modal">Yes</button>
                 </div>
             </div>
         </div>
@@ -162,15 +165,15 @@
                     <h5 class="modal-title" id="exampleModalLabel">Check Missile Alert</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Are you
-                        <b>REALLY</b> sure you want to enable the alarm?</p>
-                    <p>
-                        <div class="results"></div>
-                    </p>
+                    <p>Please check the alert before sending it. Are you sure want to enable the missile alert and send this
+                        message?</p>
+                    <div class="alert alert-info" role="alert">
+                        <b>EMERGENCY ALERT:</b> <div class="results"></div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confimation-modal-3" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confimation-modal-3" data-dismiss="modal">Yes</button>
                 </div>
             </div>
         </div>
@@ -182,7 +185,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Enable Missle Alert</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Enable Missile Alert</h5>
                 </div>
                 <div class="modal-body">
                     <p>Proceeding will activate the
@@ -202,7 +205,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Missle Alert is active...</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Missile Alert is active...</h5>
                 </div>
                 <div class="modal-body">
                     <p>The alarm will stay active untill you deactivate it manually.</p>
