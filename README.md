@@ -9,7 +9,7 @@ Inleiding
 	Marco verteld verhaal alsof het echt is gebeurd.
 	Fer onderbreekt en laat weten dat het een fout was.
 
-Waarom is het fout gegaan + laten zien ui: FER
+Waarom is het fout gegaan + laten zien oude ui: FER
 
 Hoe verbeteren we het en waarom is dit beter: MARCO
 
