@@ -16,6 +16,13 @@
 
 <body>
 
+    <script>
+        function getTextFromArea() {
+            var public = document.getElementById('publicAlert').value;
+            console.log(public);
+        }
+    </script>
+
     <div class="container">
         <div class="row">
             <div class="col">
@@ -69,6 +76,33 @@
                     </div>
                 </div>
 
+                <div class="card text-white bg-dark">
+                    <div class="card-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        High Surf Warning
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <button type="button" id="btn-test" class="btn btn-secondary" data-toggle="modal" data-target="#test-confimation-modal">Test Alarm System</button>
+                            <button type="button" id="button-alarm" class="btn btn-danger">Activate Alarm System</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark">
+                    <div class="card-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Landslide
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <button type="button" id="btn-test" class="btn btn-secondary" data-toggle="modal" data-target="#test-confimation-modal">Test Alarm System</button>
+                            <button type="button" id="button-alarm" class="btn btn-danger">Activate Alarm System</button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -98,14 +132,22 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Enable Missle Alert</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Create a missile alert</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Are you sure you want to enable the state-wide alarm?</p>
+                    <p>You are creating a <b>REAL</b> alert. Please provide a warning message.</p>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="publicAlert">Public Warning Message</label>
+                            <textarea class="form-control" id="publicAlert" rows="3"></textarea>
+                        </div>
+                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confimation-modal-2" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confimation-modal-2" onclick="getTextFromArea()" data-dismiss="modal">Yes</button>
                 </div>
             </div>
         </div>
@@ -117,11 +159,14 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Enable Missle Alert</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Check Missile Alert</h5>
                 </div>
                 <div class="modal-body">
                     <p>Are you
                         <b>REALLY</b> sure you want to enable the alarm?</p>
+                    <p>
+                        <div class="results"></div>
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
